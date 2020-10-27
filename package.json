@@ -14,7 +14,25 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@mikro-orm/cli": "^4.2.3",
+    "@mikro-orm/core": "^4.2.3",
+    "@mikro-orm/migrations": "^4.2.3",
+    "@mikro-orm/postgresql": "^4.2.3",
     "@types/node": "^14.14.5",
-    "typescript": "^4.0.5"
+    "nodemon": "^2.0.6",
+    "pg": "^8.4.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5",
+    "yarn": "^1.22.10"
+  },
+  "resolutions": {
+    "knex": "0.21.6"
+  },
+  "mikro-orm": {
+    "useTsNode": true,
+    "configPaths": [
+      "./src/mikro-orm.config.ts",
+      "./dist/mikro-orm.config.js"
+    ]
   }
 }
